@@ -1,0 +1,38 @@
+{
+  "appId": "com.electron.infra",
+  "compression": "normal",
+  "productName": "ELECTRON_INFRA",
+  "directories": {
+    "buildResources": "build",
+    "output": "release"
+  },
+  "mac": {
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64"]
+      }
+    ],
+    "category": "public.app-category.utilities",
+    "darkModeSupport": true
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "./public/logo512.png"
+  },
+  "linux": {
+    "target": [
+      {
+        "target": "deb",
+        "arch": ["x64"]
+      }
+    ],
+    "category": "Utility",
+    "icon": "./public/logo512.png"
+  }
+}
