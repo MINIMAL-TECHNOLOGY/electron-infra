@@ -20,7 +20,7 @@ import {
   logger,
   // runExecutionWorker,
 } from '@Main/services';
-import { DIContainer } from '@Main/configurations';
+// import { DIContainer } from '@Main/configurations';
 import * as applicationHandlers from '@Main/handlers';
 
 const ENV = (process.env.REACT_APP_ENV || 'development').toUpperCase();
@@ -46,7 +46,7 @@ export class Application extends BaseApplication {
   private repositoryService: RepositoryService;
   private sagaService: SagaService;
   private userService: UserService;
-  private diContainer: DIContainer;
+  // private diContainer: DIContainer;
 
   // -----------------------------------------------------------
   constructor(app: ElectronApplication) {
@@ -55,7 +55,7 @@ export class Application extends BaseApplication {
     this.repositoryService = RepositoryService.getInstance();
     this.sagaService = SagaService.getInstance();
     this.userService = UserService.getInstance();
-    this.diContainer = DIContainer.getInstance();
+    // this.diContainer = DIContainer.getInstance();
   }
 
   // -----------------------------------------------------------

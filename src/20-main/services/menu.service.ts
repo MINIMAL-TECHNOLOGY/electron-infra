@@ -78,6 +78,7 @@ const generateMenu = (opts: { open: Function }) => {
           label: 'Settings',
           click: () => {
             console.log('Open settings');
+            open(Screens.SETTING);
           },
         },
         { type: 'separator' },
